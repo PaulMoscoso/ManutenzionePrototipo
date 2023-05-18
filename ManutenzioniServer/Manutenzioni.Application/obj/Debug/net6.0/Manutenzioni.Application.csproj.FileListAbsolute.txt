@@ -1,0 +1,15 @@
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\obj\Debug\net6.0\Manutenzioni.Application.csproj.AssemblyReference.cache
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\obj\Debug\net6.0\Manutenzioni.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\obj\Debug\net6.0\Manutenzioni.Application.AssemblyInfoInputs.cache
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\obj\Debug\net6.0\Manutenzioni.Application.AssemblyInfo.cs
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\obj\Debug\net6.0\Manutenzioni.Application.csproj.CoreCompileInputs.cache
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\bin\Debug\net6.0\Manutenzioni.Application.deps.json
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\bin\Debug\net6.0\Manutenzioni.Application.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\bin\Debug\net6.0\ref\Manutenzioni.Application.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\bin\Debug\net6.0\Manutenzioni.Application.pdb
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\obj\Debug\net6.0\Manutenzioni.Application.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\obj\Debug\net6.0\ref\Manutenzioni.Application.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\obj\Debug\net6.0\Manutenzioni.Application.pdb
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\bin\Debug\net6.0\Manutenzioni.Domain.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\bin\Debug\net6.0\Manutenzioni.Domain.pdb
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Application\obj\Debug\net6.0\Manutenzioni.Application.csproj.CopyComplete

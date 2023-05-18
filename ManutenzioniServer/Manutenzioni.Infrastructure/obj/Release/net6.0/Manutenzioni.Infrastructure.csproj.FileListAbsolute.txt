@@ -1,0 +1,17 @@
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\bin\Release\net6.0\Manutenzioni.Infrastructure.deps.json
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\bin\Release\net6.0\Manutenzioni.Infrastructure.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\bin\Release\net6.0\ref\Manutenzioni.Infrastructure.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\bin\Release\net6.0\Manutenzioni.Infrastructure.pdb
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\bin\Release\net6.0\Manutenzioni.Application.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\bin\Release\net6.0\Manutenzioni.Domain.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\bin\Release\net6.0\Manutenzioni.Application.pdb
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\bin\Release\net6.0\Manutenzioni.Domain.pdb
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\obj\Release\net6.0\Manutenzioni.Infrastructure.csproj.AssemblyReference.cache
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\obj\Release\net6.0\Manutenzioni.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\obj\Release\net6.0\Manutenzioni.Infrastructure.AssemblyInfoInputs.cache
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\obj\Release\net6.0\Manutenzioni.Infrastructure.AssemblyInfo.cs
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\obj\Release\net6.0\Manutenzioni.Infrastructure.csproj.CoreCompileInputs.cache
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\obj\Release\net6.0\Manutenzioni.Infrastructure.csproj.CopyComplete
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\obj\Release\net6.0\Manutenzioni.Infrastructure.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\obj\Release\net6.0\ref\Manutenzioni.Infrastructure.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Infrastructure\obj\Release\net6.0\Manutenzioni.Infrastructure.pdb

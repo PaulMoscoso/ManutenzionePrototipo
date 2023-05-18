@@ -1,0 +1,311 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Api\\Manutenzioni.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Api\\Manutenzioni.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Api\\Manutenzioni.Api.csproj",
+        "projectName": "Manutenzioni.Api",
+        "projectPath": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Api\\Manutenzioni.Api.csproj",
+        "packagesPath": "C:\\Users\\paul.moscoso\\.nuget\\packages\\",
+        "outputPath": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\paul.moscoso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Application\\Manutenzioni.Application.csproj": {
+                "projectPath": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Application\\Manutenzioni.Application.csproj"
+              },
+              "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Infrastructure\\Manutenzioni.Infrastructure.csproj": {
+                "projectPath": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Infrastructure\\Manutenzioni.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Application\\Manutenzioni.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Application\\Manutenzioni.Application.csproj",
+        "projectName": "Manutenzioni.Application",
+        "projectPath": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Application\\Manutenzioni.Application.csproj",
+        "packagesPath": "C:\\Users\\paul.moscoso\\.nuget\\packages\\",
+        "outputPath": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\paul.moscoso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Domain\\Manutenzioni.Domain.csproj": {
+                "projectPath": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Domain\\Manutenzioni.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0-preview.2.23128.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Domain\\Manutenzioni.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Domain\\Manutenzioni.Domain.csproj",
+        "projectName": "Manutenzioni.Domain",
+        "projectPath": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Domain\\Manutenzioni.Domain.csproj",
+        "packagesPath": "C:\\Users\\paul.moscoso\\.nuget\\packages\\",
+        "outputPath": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\paul.moscoso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Infrastructure\\Manutenzioni.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Infrastructure\\Manutenzioni.Infrastructure.csproj",
+        "projectName": "Manutenzioni.Infrastructure",
+        "projectPath": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Infrastructure\\Manutenzioni.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\paul.moscoso\\.nuget\\packages\\",
+        "outputPath": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\paul.moscoso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Application\\Manutenzioni.Application.csproj": {
+                "projectPath": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Application\\Manutenzioni.Application.csproj"
+              },
+              "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Domain\\Manutenzioni.Domain.csproj": {
+                "projectPath": "C:\\PAUL\\PROGETTI\\Manutenzioni\\ManutenzioniServer\\Manutenzioni.Domain\\Manutenzioni.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

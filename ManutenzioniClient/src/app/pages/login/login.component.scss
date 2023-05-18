@@ -1,0 +1,33 @@
+mat-toolbar{
+    background-color: #1f1b3e;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1rem;
+}
+
+.box{
+    flex-basis: 30rem;
+    flex-grow: 1;
+    margin: 10px;
+    width: 100%;
+   // background-color: red; 
+}
+
+.menuGradient{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.menuShadow{
+    border-radius: 4px;
+    //background: #0e0038;
+    box-shadow:  8px -8px 25px #0c012f,
+                 -8px 8px 25px #110044;
+}
+
+.bodyGradient{
+    background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3E64FF calc(72% + 1px), #3E64FF 100%);
+}

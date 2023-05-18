@@ -1,0 +1,299 @@
+<div>
+    <mat-card>
+        <form [formGroup]="filterForm">
+            <div class="container">
+                <div class="box">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Società</mat-label>
+                        <mat-select formControlName="societa" (selectionChange)="changeSocieta($event)">
+                            <mat-option [value]="'-1'">Tutti</mat-option>
+                            <mat-option [value]="'SOP'">
+                              SOP
+                            </mat-option>
+                            <mat-option [value]="'CO2'">
+                              CO2
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="box">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Tipo</mat-label>
+                        <mat-select formControlName="tipo" (selectionChange)="changeTipo($event)">
+                            <mat-option [value]="'-1'">Tutti</mat-option>
+                            <mat-option [value]="'AN/VER'">
+                              AN/VER
+                            </mat-option>
+                            <mat-option [value]="'CENSIMENTO/REGISTRO'">
+                              CENSIMENTO/REGISTRO
+                            </mat-option>
+                            <mat-option [value]="'COL'">
+                              COL
+                            </mat-option>
+                            <mat-option [value]="'MAN'">
+                              MAN
+                            </mat-option>
+                            <mat-option [value]="'MANFULLSER'">
+                              MANFULLSER
+                            </mat-option>
+                            <mat-option [value]="'MANFULLSER'">
+                              MANFULLSER
+                            </mat-option>
+                            <mat-option [value]="'RIC-REV'">
+                              RIC-REV
+                            </mat-option>
+                            <mat-option [value]="'RIPRISTINO'">
+                              RIPRISTINO
+                            </mat-option>
+                            <mat-option [value]="'RIT-REV'">
+                              RIT-REV
+                            </mat-option>
+                            <mat-option [value]="'PORTE'">
+                              PORTE
+                            </mat-option>
+                            <mat-option [value]="'PROVATENUTA'">
+                              PROVATENUTA
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            
+                <div class="box">
+                    <mat-form-field class="matFormField">
+                        <mat-label>Pivacf</mat-label>
+                        <input matInput placeholder="Pivacf" value=""  formControlName="pivacf">
+                    </mat-form-field>
+                </div>   
+                <div class="box">
+                    <mat-form-field appearance="fill">
+                        <mat-label>CodCliente </mat-label>
+                        <input matInput placeholder="CodCliente" value="" formControlName="codCliente">
+                    </mat-form-field>
+                </div>
+                <div class="box">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Cliente </mat-label>
+                        <input matInput placeholder="Cliente" value="" formControlName="cliente">
+                    </mat-form-field>
+                </div>
+                <div class="box">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Cap</mat-label>
+                        <input matInput placeholder="Cap" value="" formControlName="cap" >
+                    </mat-form-field>
+                </div>
+                <div class="box" >
+                    <mat-form-field appearance="fill">
+                        <mat-label>Provincia</mat-label>
+                        <mat-select formControlName="provincia" (selectionChange)="changeProvincia($event)">
+                            <mat-option [value]="'-1'">Tutti</mat-option>
+                            <mat-option [value]="'AL'">
+                              AL
+                            </mat-option>
+                            <mat-option [value]="'AT'">
+                              AT
+                            </mat-option>
+                            <mat-option [value]="'BG'">
+                              BG
+                            </mat-option>
+                            <mat-option [value]="'BI'">
+                              BI
+                            </mat-option>
+                            <mat-option [value]="'BL'">
+                              BL
+                            </mat-option>
+                            <mat-option [value]="'BO'">
+                              BO
+                            </mat-option>
+                            <mat-option [value]="'BS'">
+                              BS
+                            </mat-option>
+                            <mat-option [value]="'CN'">
+                              CN
+                            </mat-option>
+                            <mat-option [value]="'CO'">
+                              CO
+                            </mat-option>
+                            <mat-option [value]="'CR'">
+                              CR
+                            </mat-option>
+                            <mat-option [value]="'FC'">
+                              FC
+                            </mat-option>
+                            <mat-option [value]="'FE'">
+                              FE
+                            </mat-option>
+                            <mat-option [value]="'GE'">
+                              GE
+                            </mat-option>
+                            <mat-option [value]="'LC'">
+                              LC
+                            </mat-option>
+                            <mat-option [value]="'MB'">
+                              MB
+                            </mat-option>
+                            <mat-option [value]="'MI'">
+                              MI
+                            </mat-option>
+                            <mat-option [value]="'MO'">
+                              MO
+                            </mat-option>
+                            <mat-option [value]="'MN'">
+                              MN
+                            </mat-option>
+                            <mat-option [value]="'PV'">
+                              PV
+                            </mat-option>
+                            <mat-option [value]="'PD'">
+                              PD
+                            </mat-option>
+                            <mat-option [value]="'PR'">
+                              PR
+                            </mat-option>
+                            <mat-option [value]="'RA'">
+                              RA
+                            </mat-option>
+                            <mat-option [value]="'RE'">
+                              RE
+                            </mat-option>
+                            <mat-option [value]="'RN'">
+                              RN
+                            </mat-option>
+                            <mat-option [value]="'RO'">
+                              RO
+                            </mat-option>
+                            <mat-option [value]="'RE'">
+                              RE
+                            </mat-option>
+                            <mat-option [value]="'SP'">
+                              SP
+                            </mat-option>
+                            <mat-option [value]="'SV'">
+                              SV
+                            </mat-option>
+                            <mat-option [value]="'TO'">
+                              TO
+                            </mat-option>
+                            <mat-option [value]="'TV'">
+                              TV
+                            </mat-option>
+                            <mat-option [value]="'VA'">
+                              VA
+                            </mat-option>
+                            <mat-option [value]="'VB'">
+                              VB
+                            </mat-option>
+                            <mat-option [value]="'VC'">
+                              VC
+                            </mat-option>
+                            <mat-option [value]="'VB'">
+                              VB
+                            </mat-option>
+                            <mat-option [value]="'VE'">
+                              VE
+                            </mat-option>
+                            <mat-option [value]="'VI'">
+                              VI
+                            </mat-option>
+                            <mat-option [value]="'VR'">
+                              VR
+                            </mat-option>
+                            <mat-option [value]="'VB'">
+                              VB
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="box">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Città</mat-label>
+                        <input matInput placeholder="Città" value="" formControlName="citta">
+                    </mat-form-field>
+                </div>
+                <div class="box">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Tecnico zona</mat-label>
+                        <mat-select formControlName="tecnicoZona" (selectionChange)="changeTecnicoZona($event)">
+                            <mat-option [value]="'-1'">Tutti</mat-option>
+                            <mat-option [value]="'50'">
+                                CROCCO DANIELE
+                            </mat-option>
+                            <mat-option [value]="'21'">
+                                PAVALEAN
+                            </mat-option>
+                            <mat-option [value]="'26'">
+                                LO BUE GIUSEPPE
+                            </mat-option>
+                            <mat-option [value]="'38'">
+                                SCATTOLIN RICCARDO
+                            </mat-option>
+                            <mat-option [value]="'08'">
+                                GIRARDIN DAMIANO
+                            </mat-option>
+                            <mat-option [value]="'38'">
+                                SCATTOLIN RICCARDO
+                            </mat-option>
+                            <mat-option [value]="'90'">
+                                STABILI
+                            </mat-option>
+                            <mat-option [value]="'67'">
+                                AROTENUTO
+                            </mat-option>
+                            <mat-option [value]="'09'">
+                                CARLI ALESSANDRO
+                            </mat-option>
+                            <mat-option [value]="'40'">
+                                 CARLI ANDREA
+                            </mat-option>
+                            <mat-option [value]="'38'">
+                                SCATTOLIN RICCARDO
+                            </mat-option>
+                            <mat-option [value]="'84'">
+                                FERRARO GIOVANNI
+                            </mat-option>
+                            <mat-option [value]="'41'">
+                               FERRARO MASSIMO
+                            </mat-option>
+                            <mat-option [value]="'38'">
+                                SCATTOLIN RICCARDO
+                            </mat-option>
+                            <mat-option [value]="'79'">
+                                TUCCILLO MARIO
+                            </mat-option>
+                            <mat-option [value]="'38'">
+                                SCATTOLIN RICCARDO
+                            </mat-option>
+                            <mat-option [value]="'64'">
+                                TINELLI
+                            </mat-option>
+                            <mat-option [value]="'03'">
+                              BRUNELLI ANTONIO
+                            </mat-option>
+                            <mat-option [value]="'69'">
+                              GHISOLFI - TINELLI
+                            </mat-option>
+                            <mat-option [value]="'19'">
+                              CAVAZZI
+                            </mat-option>
+                            <mat-option [value]="'38'">
+                                CAVAZZI
+                            </mat-option>
+                            <mat-option [value]="'37'">
+                              MARTINO
+                            </mat-option>
+                            <mat-option [value]="'38'">
+                                SCATTOLIN RICCARDO
+                            </mat-option>
+                            <mat-option [value]="'49'">
+                                 ONETO
+                            </mat-option>
+                            <mat-option [value]="'01'">
+                              BALBI
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </form>
+    </mat-card>
+</div>

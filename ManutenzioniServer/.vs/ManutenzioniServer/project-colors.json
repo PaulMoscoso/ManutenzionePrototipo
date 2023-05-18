@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1c7e046f-7d8f-4e4d-ae60-f695e4d4dfa4": {
+      "ProjectGuid": "1c7e046f-7d8f-4e4d-ae60-f695e4d4dfa4",
+      "DisplayName": "Manutenzioni.Domain",
+      "ColorIndex": 0
+    },
+    "8bf9b8a2-2a19-48a6-b7c1-3129af8f2fa2": {
+      "ProjectGuid": "8bf9b8a2-2a19-48a6-b7c1-3129af8f2fa2",
+      "DisplayName": "Manutenzioni.Application",
+      "ColorIndex": 1
+    },
+    "b2d0c49f-eff6-466f-8f53-bb8d5395f62c": {
+      "ProjectGuid": "b2d0c49f-eff6-466f-8f53-bb8d5395f62c",
+      "DisplayName": "Manutenzioni.Infrastructure",
+      "ColorIndex": 2
+    },
+    "fcff7ce3-ace9-4a0c-989b-b0a85d5cf34e": {
+      "ProjectGuid": "fcff7ce3-ace9-4a0c-989b-b0a85d5cf34e",
+      "DisplayName": "Manutenzioni.Api",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "File esterni",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}

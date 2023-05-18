@@ -1,0 +1,164 @@
+  <!-- <button mat-button color="primary">Aggiorna</button> -->
+
+  <mat-tab-group>
+    <mat-tab label="Interventi">
+         <div>
+            <!-- <mat-toolbar>
+                <span>Ordini</span>
+              </mat-toolbar> -->
+              <section style="width: 100%;">
+                  <button (click)="updateList()" mat-button color="accent" class="backbroundButton">Aggiorna</button>
+              </section>
+            <mat-form-field>
+                <mat-label>Filter</mat-label>
+                <input matInput (keyup)="applyFilter($event)" placeholder="Cerca" #input>
+            </mat-form-field>
+            <!-- <mat-progress-bar *ngIf="isLoading" mode="indeterminate" style="height: 5px;"></mat-progress-bar> -->
+              <div class="mat-elevation-z8">
+                <table mat-table [dataSource]="dataSource" matSort>
+                <!-- <table mat-table  matSort> -->
+                  <ng-container matColumnDef="numeroOrdine">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Numero Ordine </th>
+                    <td mat-cell *matCellDef="let row" class="classColorText"> {{ row.numeroOrdine }} </td>
+                  </ng-container>
+                  <!-- ID Column -->
+                  <ng-container matColumnDef="ragioneSociale">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Ragione Sociale </th>
+                    <td mat-cell *matCellDef="let row" class="classColorText"> {{row.ragioneSociale}} </td>
+                  </ng-container>
+                 
+              
+                  <tr  mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                  <!-- <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="{'classError': row.executionstatus=='Fallito' }" ></tr> -->
+                  <!-- <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngStyle]="{'background-color': row.colore}" [ngClass]="getTypeOfClass(row)" [ngClass]="manageClassActive(row)"  (click)="openDialog(row)"></tr> -->
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="openContracts()"></tr>
+              
+                  <!-- Row shown when there is no matching data. -->
+                  <tr class="mat-row" *matNoDataRow>
+                    <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+                  </tr>
+                </table>
+                <mat-paginator [length]="listLength"
+                                [pageSize]="5"
+                                [pageSizeOptions]="[5, 8, 25, 100]">
+                </mat-paginator>
+              </div>
+         </div>
+    </mat-tab>
+    <mat-tab label="Censimento" *ngIf="isVisibleTabContratti">
+        <div>
+            <mat-toolbar>
+              <img src="../../../assets/estintori/testataEstintori.PNG" alt="" height="60%" width="40%" style="border-radius: 10px;">
+              <span style="margin-left: 10%">Estintori</span>
+            </mat-toolbar>
+              <!-- <section style="width: 100%;">
+                  <button (click)="updateList()" mat-button color="accent" class="backbroundButton">Aggiorna</button>
+              </section> -->
+            <mat-form-field>
+                <mat-label>Filter</mat-label>
+                <input matInput (keyup)="applyFilter($event)" placeholder="Cerca" #input>
+            </mat-form-field>
+            <div>
+                <table mat-table
+                        [dataSource]="dataSourceContract" multiTemplateDataRows
+                        class="mat-elevation-z8">
+                    <ng-container matColumnDef="{{column}}" *ngFor="let column of displayedColumnsCantract">
+                        <span *ngIf="column=='tipoEstintore'">
+                            <th mat-header-cell *matHeaderCellDef> Estintore </th>
+                            <td mat-cell *matCellDef="let element"> <img src="../../../assets/estintori/tipoEstintore{{ element[column] }}.PNG" alt="" width="40%"> </td>
+                        </span>
+                        <span *ngIf="column=='tipoCarrello'">
+                            <th mat-header-cell *matHeaderCellDef> Carrello </th>
+                            <td mat-cell *matCellDef="let element"> <img src="../../../assets/estintori/tipoCarrello{{ element[column] }}.PNG" alt="" width="40%"> </td>
+                        </span>
+                        <span *ngIf="column=='tipoInstallazione'">
+                            <th mat-header-cell *matHeaderCellDef> Installazione </th>
+                            <td mat-cell *matCellDef="let element"> <img src="../../../assets/estintori/tipoInstallazione{{ element[column] }}.PNG" alt="" width="40%"> </td>
+                        </span>
+                    </ng-container>
+                    <ng-container matColumnDef="expand">
+                        <th mat-header-cell *matHeaderCellDef aria-label="row actions">&nbsp;</th>
+                        <td mat-cell *matCellDef="let element">
+                        <button mat-icon-button aria-label="expand row" (click)="(expandedElement = expandedElement === element ? null : element); $event.stopPropagation()">
+                            <mat-icon *ngIf="expandedElement !== element">keyboard_arrow_down</mat-icon>
+                            <mat-icon *ngIf="expandedElement === element">keyboard_arrow_up</mat-icon>
+                        </button>
+                        </td>
+                    </ng-container>
+
+                    <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+                    <ng-container matColumnDef="expandedDetail">
+                        <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length">
+                        <div class="example-element-detail"
+                            [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+                            <!-- <div class="example-element-diagram"> -->
+                            <div>
+                                <div class="example-element-position"> Portatile Co2 </div>
+                                <div class="example-element-symbol"><img src="../../../assets/estintori/imgEstintore{{ element.immagine}}.PNG" alt="" width="40%"> {{element.symbol}} </div>
+                                <div class="example-element-name"> No piantal, no catello </div>
+                               <!--  <div class="example-element-weight"> {{element.weight}} </div> -->
+                            </div>
+                            <div class="example-element-description">
+
+                                <img src="../../../assets/estintori/descrizione{{ element.descrizione }}.PNG" alt="" width="100%" >
+                            <!-- {{element.descrizione}} -->
+                            <!-- <span class="example-element-description-attribution"> -- Wikipedia </span> -->
+                            </div>
+                        </div>
+                        </td>
+                    </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
+                    <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand;"
+                        class="example-element-row"
+                        [class.example-expanded-row]="expandedElement === element"
+                        (click)="expandedElement = expandedElement === element ? null : element">
+                    </tr>
+                    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+                </table>
+            </div>
+
+
+
+              <!-- <div class="mat-elevation-z8">
+                <table mat-table [dataSource]="dataSourceContract" matSort>
+                  <ng-container matColumnDef="tipoEstintore" style="width: 10%;">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Estintore </th>
+                    <td mat-cell *matCellDef="let row" class="classColorText"> <img src="../../../assets/estintori/tipoEstintore{{ row.tipoEstintore }}.PNG" alt="" width="15%"></td>
+                  </ng-container>
+                  <ng-container matColumnDef="tipoCarrello">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Carrello </th>
+                    <td mat-cell *matCellDef="let row" class="classColorText"> <img src="../../../assets/estintori/tipoCarrello{{ row.tipoEstintore }}.PNG" alt="" width="15%"></td>
+                  </ng-container>
+                  <ng-container matColumnDef="tipoInstallazione">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Installazione </th>
+                    <td mat-cell *matCellDef="let row" class="classColorText"> <img src="../../../assets/estintori/tipoInstallazione{{ row.tipoEstintore }}.PNG" alt="" width="15%"></td>
+                  </ng-container>
+                  <ng-container matColumnDef="immagine">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Immagine </th>
+                    <td mat-cell *matCellDef="let row" class="classColorText"> <img src="../../../assets/estintori/imgEstintore{{ row.tipoEstintore }}.PNG" alt="" width="15%"></td>
+                  </ng-container>
+                  <ng-container matColumnDef="descrizione">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Descrizione </th>
+                    <td mat-cell *matCellDef="let row" class="classColorText"><img src="../../../assets/estintori/descrizione{{ row.tipoEstintore }}.PNG" alt="" width="20%"></td>
+                  </ng-container>
+              
+                  <tr  mat-header-row *matHeaderRowDef="displayedColumnsCantract"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumnsCantract;"></tr>
+              
+                  <tr class="mat-row" *matNoDataRow>
+                    <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+                  </tr>
+                </table>
+                <mat-paginator [length]="listLength"
+                                [pageSize]="5"
+                                [pageSizeOptions]="[5, 8, 25, 100]">
+                </mat-paginator>
+              </div> -->
+         </div>
+    </mat-tab>
+  </mat-tab-group>
+
+
+
+
+  

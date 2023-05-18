@@ -1,0 +1,12 @@
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Domain\bin\Release\net6.0\Manutenzioni.Domain.deps.json
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Domain\bin\Release\net6.0\Manutenzioni.Domain.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Domain\bin\Release\net6.0\ref\Manutenzioni.Domain.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Domain\bin\Release\net6.0\Manutenzioni.Domain.pdb
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Domain\obj\Release\net6.0\Manutenzioni.Domain.csproj.AssemblyReference.cache
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Domain\obj\Release\net6.0\Manutenzioni.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Domain\obj\Release\net6.0\Manutenzioni.Domain.AssemblyInfoInputs.cache
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Domain\obj\Release\net6.0\Manutenzioni.Domain.AssemblyInfo.cs
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Domain\obj\Release\net6.0\Manutenzioni.Domain.csproj.CoreCompileInputs.cache
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Domain\obj\Release\net6.0\Manutenzioni.Domain.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Domain\obj\Release\net6.0\ref\Manutenzioni.Domain.dll
+C:\PAUL\PROGETTI\Manutenzioni\ManutenzioniServer\Manutenzioni.Domain\obj\Release\net6.0\Manutenzioni.Domain.pdb
